@@ -3,48 +3,64 @@
     "id": 1,
     "image": "https://i.ibb.co/0h1k3nK/class-boxing.png",
     "title": "Boxing",
-    "description": "Description for the first item."
+    "description": "Description for the first item.",
+    "instructor": "John Smith",
+    "price": 200
   },
   {
     "id": 2,
     "image": "https://i.ibb.co/M19fshf/class-kickboxing.png",
     "title": " KickBoxing",
-    "description": "Description for the second item."
+    "description": "Description for the second item.",
+    "instructor": "Alice Johnson",
+    "price": 299
   },
   {
     "id": 3,
     "image": "https://i.ibb.co/txBTymz/class-mma.png",
     "title": "MMA",
-    "description": "Description for the third item."
+    "description": "Description for the third item.",
+    "instructor": "Michael Johnson",
+    "price": 230
   },
   {
     "id": 4,
     "image": "https://i.ibb.co/09gHsSb/class-fitness.png",
     "title": " Extrem Fintness",
-    "description": "Description for the fourth item."
+    "description": "Description for the fourth item.",
+    "instructor": "Emily Davis",
+    "price": 210
   },
   {
     "id": 5,
     "image": "https://i.ibb.co/p3Zk8KB/class-crossfit.png",
     "title": "Crossfit",
-    "description": "Description for the fifth item."
+    "description": "Description for the fifth item.",
+    "instructor": "Daniel Brown",
+    "price": 240
   },
   {
     "id": 6,
     "image": "https://i.ibb.co/2vkQ7N2/class-jiu-jitsu.png",
     "title": "Kids Jiu Jitsu",
-    "description": "Description for the sixth item."
+    "description": "Description for the sixth item.",
+    "instructor": "Olivia Wilson",
+    "price": 220
   },
   {
     "id": 7,
     "image": "https://i.ibb.co/7RpdcZv/class-muay-thai.png",
     "title": "Muay Thai",
-    "description": "Description for the seventh item."
+    "description": "Description for the seventh item.",
+    "instructor": "Liam Miller",
+    "price": 200
   },
   {
     "id": 8,
     "image": "https://i.ibb.co/ZdVx99s/class-self-defence.png",
     "title": "Self Defence",
-    "description": "Description for the eighth item."
+    "description": "Description for the eighth item.",
+    "instructor": "Sophia Martinez",
+    "price": 260
   }
 ]

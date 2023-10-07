@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "designation": "Instructor",
+    "course": "Boxing",
+    "img": "https://i.ibb.co/fFffJNK/man.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Alice Johnson",
+    "designation": "Instructor",
+    "course": "KickBoxing",
+    "img": "https://i.ibb.co/5BMmvWK/mandan.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Emma Davis",
+    "designation": "Instructor",
+    "course": "Extrem Fitness",
+    "img": "https://i.ibb.co/M19fshf/class-kickboxing.png"
+  },
+  {
+    "id": 4,
+    "name": "Michael Wilson",
+    "designation": "Instructor",
+    "course": "MMA",
+    "img": "https://i.ibb.co/0h1k3nK/class-boxing.png"
+  },
+  {
+    "id": 5,
+    "name": "Daniel Brown",
+    "designation": "Instructor",
+    "course": "Crossfit",
+    "img": "https://i.ibb.co/2SFwJ8s/man6.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Olivia Brown",
+    "designation": "Instructor",
+    "course": "Kids Jiu Jitsu",
+    "img": "https://i.ibb.co/h1XzGDT/man5.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Liam Miller",
+    "designation": "Instructor",
+    "course": "Muay Thai",
+    "img": "https://i.ibb.co/FDV0dqy/man4.webp"
+  },
+  {
+    "id": 8,
+    "name": "Sophia Martinez",
+    "designation": "Instructor",
+    "course": "Self Defence",
+    "img": "https://i.ibb.co/JmnCNjK/man3.jpg"
+  }
+]

@@ -1,10 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Error404 from "../Layout/404/Error404";
+import AllClasses from "../Layout/AllClasses/AllClasses";
 import SingIn from "../Layout/Auth/SignIn";
 import SignUp from "../Layout/Auth/SignUp";
-import Home from "../Layout/Home/Home";
-import Root from "../Layout/Root/Root";
 import ClassDetails from "../Layout/ClassDetails/ClassDetails";
+import Home from "../Layout/Home/Home";
+import Instructors from "../Layout/Instructors/Instructors";
+import Root from "../Layout/Root/Root";
 
 const Router = createBrowserRouter([
   {
@@ -22,7 +24,13 @@ const Router = createBrowserRouter([
       },
       {
         path: "/classes",
-        element: <SingIn />,
+        element: <AllClasses />,
+        loader: ()=> fetch("./class.json"),
+      },
+      {
+        path: "/instructors",
+        element: <Instructors />,
+        loader: ()=> fetch("./instructor.json"),
       },
       {
         path: "/signin",
