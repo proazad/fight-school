@@ -10,9 +10,9 @@ const Instructors = () => {
             {allInstructors.map((item) => (
               <li
                 key={item.id}
-                className="p-5 bg-base-200 flex flex-col justify-center items-center"
+                className="p-5 bg-base-200 flex flex-col justify-center items-center rounded-ss-3xl rounded-ee-3xl"
               >
-                <img src={item.img} className="rounded-full h-44 w-44" alt="" />
+                <img src={item.img} className="rounded-full h-44 w-44 border-4 border-success" alt="" />
                 <h3 className="text-2xl font-bold text-neutral py-2">
                   {item.name}
                 </h3>

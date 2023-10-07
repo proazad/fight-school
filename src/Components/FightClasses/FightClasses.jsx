@@ -1,7 +1,7 @@
 import ClassSlider from "./ClassSlider";
 const Classes = () => {
   return (
-    <div className="bg-neutral">
+    <div className="bg-neutral py-10">
       <div className="w-8/12  mx-auto py-16 text-white text-center">
         <h2 className="text-4xl underline">Our classes</h2>
         <p className="text-base mt-5">
