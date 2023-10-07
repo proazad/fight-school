@@ -24,7 +24,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav>
+    <nav className="bg-neutral text-neutral-content">
       <div className="container  mx-auto navbar">
         <div className="navbar-start">
           <div className="dropdown">

@@ -20,9 +20,9 @@ const Slider = () => {
       modules={[Autoplay, Pagination]}
       className="mySwiper"
     >
-      <SwiperSlide>
+     <SwiperSlide>
         <div
-          className="bg-cover bg-left-top bg-no-repeat bg-blend-darken h-[500px] w-full flex flex-col justify-center items-center text-white"
+          className="bg-cover bg-no-repeat bg-blend-darken h-[500px] w-full flex flex-col justify-center items-center text-white"
           style={{ background: `URL(${hero1})` }}
         >
           <div className="space-y-5">
@@ -34,10 +34,10 @@ const Slider = () => {
               to help you be the best you can be.
             </p>
             <p className="space-x-5">
-              <button className="btn btn-secondary btn-outline">
+              <button className="btn btn-success btn-outline">
                 Tell me more
               </button>
-              <button className="btn btn-secondary">Sing up</button>
+              <button className="btn btn-success">Sing up</button>
             </p>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Slider = () => {
       </SwiperSlide>
       <SwiperSlide>
         <div
-          className="bg-cover bg-no-repeat h-[500px] w-full flex flex-col justify-center items-center text-white"
+          className="bg-cover bg-no-repeat bg-blend-darken h-[500px] w-full flex flex-col justify-center items-center text-white"
           style={{ background: `URL(${hero3})` }}
         >
           <div className="space-y-5">
@@ -78,10 +78,10 @@ const Slider = () => {
               to help you be the best you can be.
             </p>
             <p className="space-x-5">
-              <button className="btn btn-secondary btn-outline">
+              <button className="btn btn-success btn-outline">
                 Tell me more
               </button>
-              <button className="btn btn-secondary">Sing up</button>
+              <button className="btn btn-success">Sing up</button>
             </p>
           </div>
         </div>

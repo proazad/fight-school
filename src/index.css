@@ -5,3 +5,43 @@
 * {
   font-family: "Open Sans", sans-serif;
 }
+.active {
+  background: #36d399 !important;
+}
+.about-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 0px;
+  color: white;
+  background-color: #36d399;
+  transition: all 0.35s ease;
+}
+.about-card:hover h2 {
+  background-color: #2b3440;
+}
+.about-card img {
+  width: 100%;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-card {
+  display: none;
+  transition: all 0.35s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #36d399;
+  color: white;
+  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+}
+.about-card:hover .overlay-card {
+  display: block;
+}
