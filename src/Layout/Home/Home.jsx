@@ -1,11 +1,11 @@
 import AboutUs from "../../Components/AboutUs/AboutUs";
-import Classes from "../../Components/Classes/Classes";
+import FightClasses from "../../Components/FightClasses/FightClasses";
 
 const Home = () => {
   return (
     <div>
       <AboutUs />
-      <Classes />
+      <FightClasses />
     </div>
   );
 };

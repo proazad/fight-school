@@ -4,6 +4,7 @@ import SingIn from "../Layout/Auth/SignIn";
 import SignUp from "../Layout/Auth/SignUp";
 import Home from "../Layout/Home/Home";
 import Root from "../Layout/Root/Root";
+import ClassDetails from "../Layout/ClassDetails/ClassDetails";
 
 const Router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const Router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/classes/:id",
+        element: <ClassDetails />,
       },
       {
         path: "/classes",
