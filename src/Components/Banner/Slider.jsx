@@ -26,7 +26,7 @@ const Slider = () => {
           style={{ background: `URL(${hero1})` }}
         >
           <div className="space-y-5">
-            <h2 className="text-6xl text-center font-bold">
+            <h2 className="text-3xl lg:text-6xl text-center font-bold">
               TRAIN LIKE A TRUE CHAMPION
             </h2>
             <p className="text-xl text-center">
@@ -48,7 +48,7 @@ const Slider = () => {
           style={{ background: `URL(${hero2})` }}
         >
           <div className="space-y-5">
-            <h2 className="text-6xl text-center font-bold">
+            <h2 className="text-3xl lg:text-6xl te text-center font-bold">
               TRAIN LIKE A TRUE CHAMPION
             </h2>
             <p className="text-xl text-center">
@@ -70,7 +70,7 @@ const Slider = () => {
           style={{ background: `URL(${hero3})` }}
         >
           <div className="space-y-5">
-            <h2 className="text-6xl text-center font-bold">
+            <h2 className="text-3xl lg:text-6xl te text-center font-bold">
               TRAIN LIKE A TRUE CHAMPION
             </h2>
             <p className="text-xl text-center">
