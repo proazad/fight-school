@@ -33,7 +33,7 @@ const AboutPart1 = () => {
               More Information
             </button>
           </div>
-          <img src={img2} alt="" />
+          <img src={img2} className="w-full" alt="" />
         </div>
       </div>
       <div className="about-card">
