@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import passwordValidation from "../../Hook/Hook";
 import bg from "../../assets/background-1.png";
+import { AuthContext } from "./AuthProvider/AuthProvider";
 import SocialSignIn from "./SocialSignIn";
 const SignUp = () => {
   const [showPass, setShowPass] = useState(false);
+  const { createUser, userProfileUpdate } = useContext(AuthContext);
+  const navigate = useNavigate();
   const showPassword = (e) => {
     setShowPass(e);
   };
@@ -20,7 +24,25 @@ const SignUp = () => {
     const confirmPassword = form.get("confirmPassword").trim();
     const checkboxs = form.get("terms");
     console.log(name, photo, email, password, confirmPassword, checkboxs);
-    passwordValidation(password, confirmPassword);
+
+    const passError = passwordValidation(password, confirmPassword);
+
+    if (!checkboxs) {
+      toast.error("You must agree to the terms and conditions");
+      return;
+    } else if (!passError) {
+      return;
+    } else {
+      createUser(email, password)
+        .then(() => {
+          toast.success("User created successfully");
+          userProfileUpdate(name, photo);
+          navigate("/");
+        })
+        .catch(() => {
+          toast.error("User with this email already exist");
+        });
+    }
   };
   return (
     <div className="bg-neutral py-10">
@@ -112,7 +134,12 @@ const SignUp = () => {
           </div>
           <div className="form-control">
             <label className="cursor-pointer label justify-start gap-3">
-              <input type="checkbox" name="terms" className="checkbox checkbox-success" />
+              <input
+                type="checkbox"
+                name="terms"
+                className="checkbox checkbox-success"
+                required
+              />
               <span className="label-text text-success">
                 accept terms & conditions
               </span>

@@ -3,7 +3,6 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import bg from "../../assets/background-3.png";
 import SocialSignIn from "./SocialSignIn";
-import passwordValidation from "../../Hook/Hook";
 const SignIn = () => {
   const [showPass, setShowPass] = useState(false);
   const showPassword = (e) => {
