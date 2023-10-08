@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className="bg-neutral text-neutral-content">
       <div className="container  mx-auto navbar">
-        <div className="navbar-start">
+        <div className="navbar-start w-full lg:w-1/2 justify-between flex-row-reverse">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -46,7 +46,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 uppercase"
+              className="menu menu-sm dropdown-content mt-3 right-0 z-[999] p-2 shadow bg-base-100 rounded-box w-52 uppercase"
             >
               {navlinks}
             </ul>

@@ -4,9 +4,9 @@ import img3 from "../../assets/home-img-3.png";
 import img4 from "../../assets/home-img-4.png";
 const AboutPart1 = () => {
   return (
-    <div className="grid grid-cols-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <div className="about-card">
-        <h2 className="">High tech Gym</h2>
+        <h2 className="shadow">High tech Gym</h2>
         <div className="img-container">
           <div className="overlay-card">
             <p>

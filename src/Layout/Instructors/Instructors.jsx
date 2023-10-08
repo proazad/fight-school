@@ -5,8 +5,8 @@ const Instructors = () => {
     <div>
       <div className="bg-neutral text-white">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold py-10">All Instructors</h2>
-          <ul className="grid grid-cols-4 gap-5 pb-10">
+          <h2 className="text-4xl font-bold py-10 px-3 lg:px-0">All Instructors</h2>
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-3 lg:px-0 pb-10">
             {allInstructors.map((item) => (
               <li
                 key={item.id}
