@@ -3,10 +3,19 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import bg from "../../assets/background-3.png";
 import SocialSignIn from "./SocialSignIn";
+import passwordValidation from "../../Hook/Hook";
 const SignIn = () => {
   const [showPass, setShowPass] = useState(false);
   const showPassword = (e) => {
     setShowPass(e);
+  };
+  const handleUserSignIn = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.target);
+    const email = form.get("email").trim();
+    const password = form.get("password").trim();
+
+    console.log(email, password);
   };
   return (
     <div className="bg-neutral py-10">
@@ -15,7 +24,7 @@ const SignIn = () => {
         className="container rounded-lg p-10 lg:w-5/12 mx-auto"
       >
         <h3 className="text-4xl text-white">Please Sign in</h3>
-        <form className="card-body">
+        <form onSubmit={handleUserSignIn} className="card-body">
           <div className="form-control">
             <label className="label">
               <span className="label-text text-success">Email</span>
@@ -23,6 +32,7 @@ const SignIn = () => {
             <input
               type="email"
               placeholder="email"
+              name="email"
               className="input input-bordered input-success"
               required
             />

@@ -1,21 +1,35 @@
-import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { useState } from "react";
-import bg from "../../assets/background-1.png";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import passwordValidation from "../../Hook/Hook";
+import bg from "../../assets/background-1.png";
 import SocialSignIn from "./SocialSignIn";
 const SignUp = () => {
   const [showPass, setShowPass] = useState(false);
   const showPassword = (e) => {
     setShowPass(e);
   };
+
+  const handleUserSignUp = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.target);
+    const name = form.get("name").trim();
+    const photo = form.get("photoUrl").trim();
+    const email = form.get("email").trim();
+    const password = form.get("password").trim();
+    const confirmPassword = form.get("confirmPassword").trim();
+    const checkboxs = form.get("terms");
+    console.log(name, photo, email, password, confirmPassword, checkboxs);
+    passwordValidation(password, confirmPassword);
+  };
   return (
     <div className="bg-neutral py-10">
       <div
         style={{ background: `url(${bg})` }}
-        className="container rounded-lg p-10 lg:w-5/12 mx-auto"
+        className="container rounded-xl p-10 lg:w-5/12 mx-auto"
       >
-        <h3 className="text-4xl text-white">Registration</h3>
-        <form className="card-body">
+        <h3 className="text-4xl text-white">Please Registration</h3>
+        <form onSubmit={handleUserSignUp} className="card-body">
           <div className="form-control">
             <label className="label">
               <span className="label-text text-success">Full Name</span>
@@ -23,6 +37,7 @@ const SignUp = () => {
             <input
               type="text"
               placeholder="Full Name"
+              name="name"
               className="input input-bordered input-success"
               required
             />
@@ -33,6 +48,7 @@ const SignUp = () => {
             </label>
             <input
               type="url"
+              name="photoUrl"
               placeholder="Enter your photo url"
               className="input input-bordered input-success"
               required
@@ -45,6 +61,7 @@ const SignUp = () => {
             <input
               type="email"
               placeholder="email"
+              name="email"
               className="input input-bordered input-success"
               required
             />
@@ -77,8 +94,8 @@ const SignUp = () => {
             </label>
             <input
               type={showPass ? "text" : "password"}
-              placeholder="password"
-              name="retypepassword"
+              placeholder="Confrim password"
+              name="confirmPassword"
               className="input input-bordered input-success"
               required
             />
@@ -95,7 +112,7 @@ const SignUp = () => {
           </div>
           <div className="form-control">
             <label className="cursor-pointer label justify-start gap-3">
-              <input type="checkbox" className="checkbox checkbox-success" />
+              <input type="checkbox" name="terms" className="checkbox checkbox-success" />
               <span className="label-text text-success">
                 accept terms & conditions
               </span>
@@ -114,7 +131,9 @@ const SignUp = () => {
             </p>
           </div>
         </form>
-        <div className="divider text-success uppercase before:bg-slate-50 after:bg-slate-50">Sign up with</div>
+        <div className="divider text-success uppercase before:bg-slate-50 after:bg-slate-50">
+          Sign up with
+        </div>
         <SocialSignIn />
       </div>
     </div>
