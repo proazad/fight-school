@@ -3,6 +3,7 @@ import Error404 from "../Layout/404/Error404";
 import AllClasses from "../Layout/AllClasses/AllClasses";
 import SingIn from "../Layout/Auth/SignIn";
 import SignUp from "../Layout/Auth/SignUp";
+import ForgotPassword from "../Layout/Auth/forgotPassword";
 import ClassDetails from "../Layout/ClassDetails/ClassDetails";
 import Home from "../Layout/Home/Home";
 import Instructors from "../Layout/Instructors/Instructors";
@@ -39,6 +40,10 @@ const Router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/forgotPassowrd",
+        element: <ForgotPassword />,
       },
     ],
   },

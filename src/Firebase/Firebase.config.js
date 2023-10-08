@@ -5,13 +5,14 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDG16pzI5M7QmzMQ0Qd6xMWyoyKOR5qAQw",
-  authDomain: "riyadexpo2030-33702.firebaseapp.com",
-  projectId: "riyadexpo2030-33702",
-  storageBucket: "riyadexpo2030-33702.appspot.com",
-  messagingSenderId: "865019129220",
-  appId: "1:865019129220:web:20d511fdf0ea85bdc801d1"
+  apiKey: "AIzaSyAJIRn6i1PJYg2NfltEFdMtbm-8zK357Jc",
+  authDomain: "fight-school-a1bd5.firebaseapp.com",
+  projectId: "fight-school-a1bd5",
+  storageBucket: "fight-school-a1bd5.appspot.com",
+  messagingSenderId: "132300072568",
+  appId: "1:132300072568:web:60a14f24480bc29079ef8d"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
