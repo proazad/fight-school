@@ -5,7 +5,7 @@ import img4 from "../../assets/home-img-4.png";
 const AboutPart1 = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-      <div className="about-card">
+      <div  className="about-card">
         <h2 className="shadow">High tech Gym</h2>
         <div className="img-container">
           <div className="overlay-card">
@@ -20,7 +20,7 @@ const AboutPart1 = () => {
           <img src={img} alt="" />
         </div>
       </div>
-      <div className="about-card">
+      <div  className="about-card">
         <h2 className="">Introductional Videos</h2>
         <div className="img-container">
           <div className="overlay-card">
@@ -36,7 +36,7 @@ const AboutPart1 = () => {
           <img src={img2} className="w-full" alt="" />
         </div>
       </div>
-      <div className="about-card">
+      <div  className="about-card">
         <h2 className="">Friendly Instructors</h2>
         <div className="img-container">
           <div className="overlay-card">
@@ -52,7 +52,7 @@ const AboutPart1 = () => {
           <img src={img3} alt="" />
         </div>
       </div>
-      <div className="about-card">
+      <div  className="about-card">
         <h2 className="">Happy Students</h2>
         <div className="img-container">
           <div className="overlay-card">

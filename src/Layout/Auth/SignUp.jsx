@@ -36,13 +36,7 @@ const SignUp = () => {
       createUser(email, password)
         .then(() => {
           toast.success("User created successfully");
-          userProfileUpdate(name, photo)
-          .then(()=>{
-            console.log("Updated");
-          })
-          .catch((error)=>{
-            console.log(error.message);
-          })
+          userProfileUpdate(name, photo);
           navigate("/");
         })
         .catch(() => {

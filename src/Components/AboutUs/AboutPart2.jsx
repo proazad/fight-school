@@ -9,7 +9,7 @@ const AboutPart2 = () => {
         className="bg-cover bg-left-top p-5 lg:p-16 text-center lg:text-left text-white"
         style={{ background: `url(${bg1})` }}
       >
-        <h2 className="text-3xl  underline mb-5 font-bold uppercase">About Our Service</h2>
+        <h2  className="text-3xl  underline mb-5 font-bold uppercase">About Our Service</h2>
         <p className="text-base lg:text-xl italic ">
           Fight School Gym Center offers a holistic approach to martial arts,
           blending traditional techniques with modern fitness.
@@ -25,7 +25,7 @@ const AboutPart2 = () => {
         <button className="btn btn-success btn-outline mt-5">Read More</button>
       </div>
       <div className="grid grid-cols-2">
-        <div className="flex flex-col justify-center text-center items-center text-neutral p-3 lg:p-10 border-r border-b">
+        <div  className="flex flex-col justify-center text-center items-center text-neutral p-3 lg:p-10 border-r border-b">
           <MdGroups2 className="text-4xl lg:text-7xl text-success" />
           <h4 className="text-base lg:text-xl font-semibold">OPEN DOOR POLICY</h4>
           <p>
