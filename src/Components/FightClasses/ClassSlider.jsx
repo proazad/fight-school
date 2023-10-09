@@ -17,9 +17,12 @@ const ClassSlider = () => {
       <div className="hidden lg:block ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
           {classes?.map((item) => (
-            <div key={item.id} data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine">
+            <div
+              key={item.id}
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div className="w-full py-5 ">
                 <div className="classCard">
                   <img src={item.image} className="w-full" />
@@ -33,10 +36,10 @@ const ClassSlider = () => {
                       </button>
                     </Link>
                   </div>
+                  <h2 className="bg-neutral hover:bg-success uppercase font-bold py-2 text-white">
+                    {item.title}
+                  </h2>
                 </div>
-                <h2 className="bg-neutral hover:bg-success uppercase font-bold py-2 text-white">
-                  {item.title}
-                </h2>
               </div>
             </div>
           ))}

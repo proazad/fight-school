@@ -34,7 +34,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/contact">Contact</NavLink>
       </li>
-      {user ? "": (
+      {user ? (
+        ""
+      ) : (
         <li>
           <NavLink to="/signin">SignIn</NavLink>
         </li>
@@ -67,6 +69,11 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 right-0 z-[999] p-2 shadow bg-base-100 rounded-box w-52 uppercase"
             >
               {navlinks}
+              {user && (
+                <li>
+                  <Link to="/profile">Profile</Link>
+                </li>
+              )}
             </ul>
           </div>
           <Link to="/" className="text-2xl font-bold uppercase">
@@ -74,7 +81,9 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-end hidden lg:flex  ml-auto">
-          <ul className="menu menu-horizontal md:flex-nowrap uppercase px-1">{navlinks}</ul>
+          <ul className="menu menu-horizontal md:flex-nowrap uppercase px-1">
+            {navlinks}
+          </ul>
           {user && (
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
