@@ -93,9 +93,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>Write your explanation here</i>
+<i>I say with my confident this code output will be "Hi there, undefined". Okay I give you explanation about my answere. Fistly Declared a function named  sayHi() thats function tage on parameter thats name "Name". In this function return "Hi There, and name parameter" but when calling this SayHi() function don't given name argument. Thats why function name parameter don't find  value and its return undefind. and full function Return "Hi there, undefined" </i>
 
 </p>
 </details>
@@ -121,9 +121,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: 3
 
-<i>Write your explanation here</i>
+<i>for above code result will be 3 . Beacuse here first declare a variable with value 0 . then declare a array variable with some integer number. There four number 0, 1,2,3  then looping in this array and get every single number. In the loop check if number looping item is true then count increment if looping item is false continue loop. We know JS count "0" as a false value. thats why 0 number of of ofset return false. Thats why there answere will be 3 beacuse there are 3 truthy value and one falsy value. There count truthy value.</i>
 
 </p>
 </details>
