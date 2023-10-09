@@ -13,23 +13,13 @@ const ClassSlider = () => {
       .then((data) => setClasses(data));
   }, []);
   return (
-    <div className="lg:w-10/12 mx-auto grid grid-cols-1">
-      <div className="hidden lg:block">
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          direction={"horizontal"}
-          slidesPerView={2}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          modules={[Autoplay, Pagination]}
-          className="mySwiper"
-        >
+    <div className="lg:w-10/12 mx-auto ">
+      <div className="hidden lg:block ">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
           {classes?.map((item) => (
-            <SwiperSlide key={item.id}>
+            <div key={item.id} data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <div className="w-full py-5 ">
                 <div className="classCard">
                   <img src={item.image} className="w-full" />
@@ -48,9 +38,9 @@ const ClassSlider = () => {
                   {item.title}
                 </h2>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+        </div>
       </div>
       <div className="block lg:hidden">
         <Swiper
@@ -83,7 +73,7 @@ const ClassSlider = () => {
                     </Link>
                   </div>
                 </div>
-                <h2 className="bg-neutral hover:bg-success uppercase font-bold py-2 text-white">
+                <h2 className="bg-neutral duration-300 hover:bg-success uppercase font-bold py-2 text-white">
                   {item.title}
                 </h2>
               </div>

@@ -7,6 +7,7 @@ import ForgotPassword from "../Layout/Auth/forgotPassword";
 import ClassDetails from "../Layout/ClassDetails/ClassDetails";
 import Home from "../Layout/Home/Home";
 import Instructors from "../Layout/Instructors/Instructors";
+import Profile from "../Layout/Profile/Profile";
 import Root from "../Layout/Root/Root";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
@@ -21,6 +22,15 @@ const Router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/classes",
+        element: (
+          <PrivateRoute>
+            <AllClasses />
+          </PrivateRoute>
+        ),
+        loader: () => fetch("../class.json"),
+      },
+      {
         path: "/class/:id",
         element: (
           <PrivateRoute>
@@ -30,14 +40,9 @@ const Router = createBrowserRouter([
         loader: () => fetch("../class.json"),
       },
       {
-        path: "/classes",
-        element: <PrivateRoute><AllClasses /></PrivateRoute>,
-        loader: () => fetch("./class.json"),
-      },
-      {
         path: "/instructors",
         element: <Instructors />,
-        loader: () => fetch("./instructor.json"),
+        loader: () => fetch("../instructor.json"),
       },
       {
         path: "/signin",
@@ -46,6 +51,14 @@ const Router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/forgotPassowrd",

@@ -32,7 +32,7 @@ const Navbar = () => {
         <NavLink to="/blog">Blog</NavLink>
       </li>
       <li>
-        <NavLink to="/gallary">Contact</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
       {user ? "": (
         <li>
@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <nav className="bg-neutral text-neutral-content">
       <div className="container  mx-auto navbar">
-        <div className="navbar-start w-full lg:w-1/2 justify-between flex-row-reverse">
+        <div className="navbar-start w-full lg:w-auto  justify-between flex-row-reverse">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -70,11 +70,11 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="text-2xl font-bold uppercase">
-            Fight<span className="text-success">School</span>
+            Fitness<span className="text-success">Events</span>
           </Link>
         </div>
-        <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal uppercase px-1">{navlinks}</ul>
+        <div className="navbar-end hidden lg:flex  ml-auto">
+          <ul className="menu menu-horizontal md:flex-nowrap uppercase px-1">{navlinks}</ul>
           {user && (
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

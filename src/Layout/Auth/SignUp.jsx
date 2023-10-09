@@ -36,7 +36,13 @@ const SignUp = () => {
       createUser(email, password)
         .then(() => {
           toast.success("User created successfully");
-          userProfileUpdate(name, photo);
+          userProfileUpdate(name, photo)
+          .then(()=>{
+            console.log("Updated");
+          })
+          .catch((error)=>{
+            console.log(error.message);
+          })
           navigate("/");
         })
         .catch(() => {
@@ -48,10 +54,10 @@ const SignUp = () => {
     <div className="bg-neutral py-10">
       <div
         style={{ background: `url(${bg})` }}
-        className="container rounded-xl p-10 lg:w-5/12 mx-auto"
+        className="container rounded-xl p-0 lg:p-10 lg:w-5/12 mx-auto"
       >
-        <h3 className="text-4xl text-white">Please Registration</h3>
         <form onSubmit={handleUserSignUp} className="card-body">
+        <h3 className="text-2xl lg:text-4xl text-white">Please Registration</h3>
           <div className="form-control">
             <label className="label">
               <span className="label-text text-success">Full Name</span>

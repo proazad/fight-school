@@ -57,7 +57,7 @@ const Footer = () => {
           </p>
           <p className="text-gray-300">Website design by Azad Hossain</p>
         </div>
-        <div className="flex-1 flex justify-center lg:justify-end gap-5 text-white">
+        <div className="flex-1 flex justify-center lg:justify-end gap-3 lg:gap-5 text-white">
             <Link to="" className="hover:text-success">Home</Link>
             <Link to="" className="hover:text-success">About</Link>
             <Link to="" className="hover:text-success">Cotact</Link>

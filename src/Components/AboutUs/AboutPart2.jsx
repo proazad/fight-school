@@ -9,7 +9,7 @@ const AboutPart2 = () => {
         className="bg-cover bg-left-top p-5 lg:p-16 text-center lg:text-left text-white"
         style={{ background: `url(${bg1})` }}
       >
-        <h2 className="text-3xl  underline mb-5 font-bold ">About Our Service</h2>
+        <h2 className="text-3xl  underline mb-5 font-bold uppercase">About Our Service</h2>
         <p className="text-base lg:text-xl italic ">
           Fight School Gym Center offers a holistic approach to martial arts,
           blending traditional techniques with modern fitness.

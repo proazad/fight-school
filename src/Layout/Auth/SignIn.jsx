@@ -31,10 +31,10 @@ const SignIn = () => {
     <div className="bg-neutral py-10">
       <div
         style={{ background: `url(${bg})` }}
-        className="container rounded-lg p-10 lg:w-5/12 mx-auto"
+        className="container rounded-lg p-0 lg:p-10 lg:w-5/12 mx-auto"
       >
-        <h3 className="text-4xl text-white">Please Sign in</h3>
         <form onSubmit={handleUserSignIn} className="card-body">
+        <h3 className="text-2xl lg:text-4xl text-white">Please Sign in</h3>
           <div className="form-control">
             <label className="label">
               <span className="label-text text-success">Email</span>

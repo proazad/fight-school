@@ -70,10 +70,7 @@ export default function Feedback() {
               />
             </div>
             <h2 className="text-base text-white">
-              I had an incredible experience during the boxing training session.
-              The instructor was highly knowledgeable, patient, and motivating.
-              The warm-up drills were effective, and the focus on proper
-              techniques improved my form significantly.{" "}
+            Participating in the Adventure Fit Challenge was a thrilling adventure from start to finish. The variety of challenges, from trail running to rope climbing, kept me engaged and motivated throughout. The event was well-organized, and safety measures were top-notch. 
             </h2>
             <h3 className="text-xl text-success mt-5">Michael Wilson</h3>
           </div>
@@ -89,10 +86,7 @@ export default function Feedback() {
               />
             </div>
             <h2 className="text-base text-white">
-              I had an incredible experience during the boxing training session.
-              The instructor was highly knowledgeable, patient, and motivating.
-              The warm-up drills were effective, and the focus on proper
-              techniques improved my form significantly.{" "}
+            Mud Run Madness was an absolute blast! The mud pits, climbing walls, and obstacle courses provided an adrenaline-packed adventure. The event staff was friendly and encouraging, creating a positive environment for all participants.
             </h2>
             <h3 className="text-xl text-success mt-5">Jane Doe</h3>
           </div>
@@ -108,10 +102,7 @@ export default function Feedback() {
               />
             </div>
             <h2 className="text-base text-white">
-              I had an incredible experience during the boxing training session.
-              The instructor was highly knowledgeable, patient, and motivating.
-              The warm-up drills were effective, and the focus on proper
-              techniques improved my form significantly.{" "}
+            I had an incredible experience at the Extreme Fitness Challenge event! The challenges were tough, but they pushed me to my limits and helped me discover my true potential. The sense of community among participants was amazing, and the event organizers did a fantastic job. 
             </h2>
             <h3 className="text-xl text-success mt-5">Olivia Brown</h3>
           </div>
