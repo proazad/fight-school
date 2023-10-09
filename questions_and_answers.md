@@ -18,10 +18,10 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
 <i>Write your explanation here</i>
-
+  This question result is empty object. Beacuse first of all decalare variable then set a empty object. Thats its console empty object. 
 </p>
 </details>
 
