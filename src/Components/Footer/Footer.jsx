@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="container px-2 lg:px-0 md:w-10/12 lg:w-10/12 mx-auto">
           <h2 className="text-2xl lg:text-3xl text-white font-bold text-center">Opening hours</h2>
           <div className="flex justify-between gap-5 lg:gap-16">
-            <div className="mt-5 flex gap-5 items-center">
+            <div className="mt-5 flex gap-1 lg:gap-5 items-center">
               <div className="bg-gray-700 p-1 lg:p-3 rounded-full">
                 <AiOutlineClockCircle className="text-success text-2xl lg:text-5xl" />
               </div>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <p className="text-gray-400 text-base ">8:00am - 9:00pm</p>
               </div>
             </div>
-            <div className="mt-5 flex gap-5 items-center">
+            <div className="mt-5 flex gap-1 lg:gap-5 items-center">
               <div className="bg-gray-700 p-1 lg:p-3 rounded-full">
                 <AiOutlineClockCircle className="text-success text-2xl lg:text-5xl" />
               </div>

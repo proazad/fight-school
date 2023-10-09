@@ -20,7 +20,7 @@ const ClassSlider = () => {
             dynamicBullets: true,
           }}
           direction={"horizontal"}
-          slidesPerView={4}
+          slidesPerView={2}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
