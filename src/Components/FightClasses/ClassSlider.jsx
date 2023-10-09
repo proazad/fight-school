@@ -31,21 +31,22 @@ const ClassSlider = () => {
           {classes?.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="w-full py-5 ">
-                <Link to={`/classes/${item.id}`}>
-                  <div className="classCard">
-                    <img src={item.image} className="w-full" />
-                    <div className="cardInfo">
-                      <p className="rounded-lg text-white text-xl bg-success px-5 py-2 ">
-                        ${item.price}
-                      </p>
-
-                      <button className="btn btn-success btn-sm btn-outline ">Show Details</button>
-                    </div>
+                <div className="classCard">
+                  <img src={item.image} className="w-full" />
+                  <div className="cardInfo">
+                    <p className="rounded-lg text-white text-xl bg-success px-5 py-2 ">
+                      ${item.price}
+                    </p>
+                    <Link to={`/class/${item.id}`}>
+                      <button className="btn btn-success btn-sm btn-outline ">
+                        Show Details
+                      </button>
+                    </Link>
                   </div>
-                  <h2 className="bg-neutral hover:bg-success uppercase font-bold py-2 text-white">
-                    {item.title}
-                  </h2>
-                </Link>
+                </div>
+                <h2 className="bg-neutral hover:bg-success uppercase font-bold py-2 text-white">
+                  {item.title}
+                </h2>
               </div>
             </SwiperSlide>
           ))}
@@ -66,25 +67,27 @@ const ClassSlider = () => {
           className="mySwiper"
         >
           {classes?.map((item) => (
-           <SwiperSlide key={item.id}>
-           <div className="w-full py-5 ">
-             <Link to={`/classes/${item.id}`}>
-               <div className="classCard">
-                 <img src={item.image} className="w-full" />
-                 <div className="cardInfo">
-                   <p className="rounded-lg text-white text-xl bg-success px-5 py-2 ">
-                     ${item.price}
-                   </p>
-
-                   <button className="btn btn-success btn-sm btn-outline ">Show Details</button>
-                 </div>
-               </div>
-               <h2 className="bg-neutral hover:bg-success uppercase font-bold py-2 text-white">
-                 {item.title}
-               </h2>
-             </Link>
-           </div>
-         </SwiperSlide>
+            <SwiperSlide key={item.id}>
+              <div className="w-full py-5 ">
+                <div className="classCard">
+                  <img src={item.image} className="w-full" />
+                  <div className="cardInfo">
+                    <p className="rounded-lg text-white text-xl bg-success px-5 py-2 ">
+                      ${item.price}
+                    </p>
+                    <Link
+                      to={`/class/${item.id}`}
+                      className="btn btn-success btn-sm btn-outline "
+                    >
+                      Show Details
+                    </Link>
+                  </div>
+                </div>
+                <h2 className="bg-neutral hover:bg-success uppercase font-bold py-2 text-white">
+                  {item.title}
+                </h2>
+              </div>
+            </SwiperSlide>
           ))}
         </Swiper>
       </div>

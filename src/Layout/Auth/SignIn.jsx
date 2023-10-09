@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import bg from "../../assets/background-3.png";
+import { AuthContext } from "./AuthProvider/AuthProvider";
 import SocialSignIn from "./SocialSignIn";
+import { toast } from "react-toastify";
 const SignIn = () => {
   const [showPass, setShowPass] = useState(false);
+  const { userSignWithPassword } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
   const showPassword = (e) => {
     setShowPass(e);
   };
@@ -13,8 +18,14 @@ const SignIn = () => {
     const form = new FormData(e.target);
     const email = form.get("email").trim();
     const password = form.get("password").trim();
-
-    console.log(email, password);
+    userSignWithPassword(email, password)
+      .then(() => {
+        toast.success("Successfully Signed in");
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch(() => {
+        toast.error("Some went wrong! Invalid Email or Password!");
+      });
   };
   return (
     <div className="bg-neutral py-10">

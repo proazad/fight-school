@@ -8,6 +8,7 @@ import ClassDetails from "../Layout/ClassDetails/ClassDetails";
 import Home from "../Layout/Home/Home";
 import Instructors from "../Layout/Instructors/Instructors";
 import Root from "../Layout/Root/Root";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const Router = createBrowserRouter([
   {
@@ -20,18 +21,22 @@ const Router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/classes/:id",
-        element: <ClassDetails />,
+        path: "/class/:id",
+        element: (
+          <PrivateRoute>
+            <ClassDetails />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/classes",
         element: <AllClasses />,
-        loader: ()=> fetch("./class.json"),
+        loader: () => fetch("./class.json"),
       },
       {
         path: "/instructors",
         element: <Instructors />,
-        loader: ()=> fetch("./instructor.json"),
+        loader: () => fetch("./instructor.json"),
       },
       {
         path: "/signin",
