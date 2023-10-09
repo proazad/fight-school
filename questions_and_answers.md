@@ -20,8 +20,7 @@ console.log(greetign);
 
 #### Answer: A
 
-<i>Write your explanation here</i>
-  This question result is empty object. Beacuse first of all decalare variable then set a empty object. Thats its console empty object. 
+<i>This question result is empty object. Beacuse first of all decalare variable then set a empty object. Thats its console empty object.</i> 
 </p>
 </details>
 
@@ -43,9 +42,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Write your explanation here</i>
+<i>This code ans should be nothing, beacuse sum funciton return string but don't give output like console or UI Output. sum funciton take 2 parameter a & b . when calling function calling there are 2 argument given but they are deffent type data first one is number type data and last one is string type data. We know in the JS string + number = string. So Thats code answere will "12" if you console this function.   </i>
 
 </p>
 </details>
@@ -69,9 +68,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>This code answere is definetly A. Beacuse if you notice that first of all declare array which name "food". Secondly declare object which name is "info". But there object property favoriteFood value is taken from food array 1st value And then change favoriteFood property value .  Its change object property favoriteFood value. But its never change food value. It change only object value. for thats why if you console food array it will give you same array </i>
 
 </p>
 </details>
